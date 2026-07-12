@@ -52,16 +52,7 @@ export default function Hero() {
             delay: 0.2
         });
 
-        // Animate Logo Characters In beautifully
-        gsap.to(logoSplit.chars, {
-            opacity: 1,
-            filter: "blur(0px)",
-            y: 0,
-            duration: 0.8,
-            stagger: 0.03,
-            ease: "power2.out",
-            delay: 0.1
-        });
+    
 
         const mm = gsap.matchMedia();
 
@@ -124,12 +115,6 @@ export default function Hero() {
 
     return (
         <section className="relative w-full overflow-x-hidden">
-            {/* Kept static in layout flow to prevent crazy screen jumping */}
-            <div ref={logoRef} className="fixed z-50 flex items-center justify-start w-auto text-white origin-bottom-left pointer-events-none select-none logo bottom-8 left-10 will-change-transform whitespace-nowrap">
-                <h5 ref={logoTextRef} className="text-xl font-light tracking-[0.25em] uppercase font-sora md:text-2xl">
-                    Passion Garage AI
-                </h5>
-            </div> 
 
             <section ref={heroRef} className="relative w-full h-screen overflow-hidden bg-black hero">
                 <div className="relative w-full h-full hero-inner">
@@ -141,24 +126,25 @@ export default function Hero() {
                         {/* Column 1 */}
                         <div className="flex flex-col flex-1 h-full gap-2 col">
                             <div className="relative flex-1 overflow-hidden item">
-                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='/images/1-v2.jpg' className="relative object-cover transform scale-125" priority/>
+                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='https://i.pinimg.com/736x/e3/aa/9c/e3aa9ce17ab53f854ec61042b2a3dc1f.jpg' className="relative object-cover transform scale-125" priority/>
                             </div>
                             <div className="relative flex-1 overflow-hidden item">
-                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='/images/2-v2.jpg' className="relative object-cover transform scale-125"/>
+                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='https://i.pinimg.com/736x/a0/d3/14/a0d314111d86d1577f092ab9a2bbf1c6.jpg' className="relative object-cover transform scale-125"/>
                             </div>
                             <div className="relative flex-1 overflow-hidden item">
-                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='/images/3-v2.jpg' className="relative object-cover transform scale-125"/>
+                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='https://i.pinimg.com/736x/22/c5/2f/22c52f46ca0c00d69ee11cb7019f70d4.jpg' className="relative object-cover transform scale-125"/>
                             </div>
                         </div>
 
                         {/* Column 2 */}
                         <div className="flex flex-col flex-1 h-full gap-2 col">
                             <div className="relative flex-1 overflow-hidden item">
-                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='/images/4-v2.jpg' className="relative object-cover transform scale-125"/>
+                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='/images/1-v2.jpg' 
+                                className="relative object-cover transform scale-125"/>
                             </div>
                             <div className="relative flex-1 overflow-hidden item">
                                 <video 
-                                    src={'/videos/hero.mp4'}
+                                    src={'/videos/hero-v2.mp4'}
                                     autoPlay
                                     loop
                                     muted
@@ -167,20 +153,20 @@ export default function Hero() {
                                 />
                             </div>
                             <div className="relative flex-1 overflow-hidden item">
-                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='/images/6-v2.jpg' className="relative object-cover transform scale-125"/>
+                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='https://i.pinimg.com/736x/48/d5/3e/48d53e554be50bfd12ba8607a145e373.jpg' className="relative object-cover transform scale-125"/>
                             </div>
                         </div>
 
                         {/* Column 3 */}
                         <div className="flex flex-col flex-1 h-full gap-2 col">
                             <div className="relative flex-1 overflow-hidden item">
-                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='/images/7-v2.jpg' className="relative object-cover transform scale-125"/>
+                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='https://i.pinimg.com/736x/b3/1f/26/b31f266d699f7695524c0b4145bd4797.jpg' className="relative object-cover transform scale-125"/>
                             </div>
                             <div className="relative flex-1 overflow-hidden item">
-                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='/images/8-v2.jpg' className="relative object-cover transform scale-125"/>
+                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='https://i.pinimg.com/736x/c9/8d/ea/c98dea77698f5cb72b4314958aba43c9.jpg' className="relative object-cover transform scale-125"/>
                             </div>
                             <div className="relative flex-1 overflow-hidden item">
-                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='/images/9-v2.jpg' className="relative object-cover transform scale-125"/>
+                                <Image fill sizes="(max-width: 1000px) 33vw, 15vw" alt="" src='/images/2-v2.jpg' className="relative object-cover transform scale-125"/>
                             </div>
                         </div>
                     </div>
