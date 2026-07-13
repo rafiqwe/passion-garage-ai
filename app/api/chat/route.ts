@@ -104,7 +104,7 @@ export async function POST(req: NextRequest) {
     const { message } = await req.json();
 
     const response = await ai.models.generateContent({
-      model: "gemini-3.5-flash",
+      model: "gemini-3.1-flash-lite",
       contents: [
         {
           role: "user",
