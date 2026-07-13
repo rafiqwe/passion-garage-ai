@@ -1,36 +1,176 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚗 Passion Garage
 
-## Getting Started
+> **A cinematic automotive experience powered by Google Gemini AI.**
 
-First, run the development server:
+Passion Garage is an immersive web experience built for the **DEV Weekend Challenge: Passion Edition**. Inspired by the passion behind legendary performance cars, the project combines cinematic storytelling, smooth GSAP animations, and an AI-powered automotive assistant to create a unique journey for car enthusiasts.
+
+![Passion Garage Banner](./public/og-image.png)
+
+---
+
+## ✨ Features
+
+* 🎬 Cinematic scroll-driven storytelling
+* 🚘 Featured performance cars
+* 📖 BMW Story experience
+* 🤖 AI Garage powered by Google Gemini
+* ⚡ GSAP & ScrollTrigger animations
+* 📱 Fully responsive design
+* 🌙 Modern dark UI inspired by premium automotive brands
+* 🚀 Built with the latest Next.js App Router
+
+---
+
+## 🤖 AI Garage
+
+AI Garage is an intelligent automotive assistant built using **Google Gemini**.
+
+Users can:
+
+* Compare performance cars
+* Learn about engines and horsepower
+* Get buying recommendations
+* Explore automotive technologies
+* Ask questions about BMW, Porsche, Ferrari, Nissan, Audi, Toyota, Mercedes-Benz, Lamborghini, McLaren, and more
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+### Animation
+
+* GSAP
+* ScrollTrigger
+
+### Artificial Intelligence
+
+* Google Gemini API
+
+### Deployment
+
+* Vercel
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository.
+
+```bash
+git clone https://github.com/rafiqwe/passion-garage-ai.git
+```
+
+Go into the project.
+
+```bash
+cd passion-garage-ai
+```
+
+Install dependencies.
+
+```bash
+npm install
+```
+
+Create an environment file.
+
+```env
+GEMINI_API_KEY=YOUR_API_KEY
+```
+
+Start the development server.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+app/
+components/
+public/
+hooks/
+lib/
+styles/
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 💡 Inspiration
 
-## Deploy on Vercel
+The theme for the DEV Weekend Challenge was **Passion**.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To me, passion is what drives engineers, designers, racers, and enthusiasts to build extraordinary machines.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Passion Garage was created to celebrate that emotion through cinematic storytelling and interactive technology.
+
+---
+
+## 🎯 Challenge Submission
+
+This project was built for:
+
+**DEV Weekend Challenge – Passion Edition**
+
+Prize Category:
+
+🏆 Best Use of Google AI
+
+---
+
+## 🌍 Live Demo
+
+👉 https://passion-garage.vercel.app/
+
+---
+
+## 💻 GitHub
+
+👉 https://github.com/rafiqwe/passion-garage-ai
+
+---
+
+## 👨‍💻 Author
+
+**Muhammad Rabbi**
+
+Full Stack Developer
+
+* GitHub: https://github.com/rafiqwe
+* Portfolio: https://muhammadrabbi.vercel.app
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## ❤️ Acknowledgements
+
+* DEV Community
+* Google Gemini
+* GSAP
+* Next.js
+* Vercel
+
+---
+
+⭐ If you enjoyed this project, consider giving it a star!
