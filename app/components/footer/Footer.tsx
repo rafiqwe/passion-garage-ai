@@ -22,10 +22,10 @@ const techStack = [
 
 const exploreLinks = [
   { label: "Hero", href: "#hero" },
-  { label: "Scroll Story", href: "#scroll-story" },
-  { label: "Featured Cars", href: "#featured-cars" },
-  { label: "BMW Story", href: "#bmw-story" },
-  { label: "AI Garage", href: "#ai-garage" },
+  { label: "Scroll Story", href: "#scrollstory" },
+  { label: "Featured Cars", href: "#legendgarage1" },
+  { label: "BMW Story", href: "#bmwStory" },
+  { label: "AI Garage", href: "#aigarage" },
 ];
 
 const technologies = [
@@ -39,15 +39,15 @@ const technologies = [
 const socials = [
   {
     name: "GitHub",
-    href: "https://github.com/rifeqwe",
+    href: "https://github.com/rafiqwe",
   },
   {
     name: "Instagram",
-    href: "https://instagram/muhammadrabbi.dev",
+    href: "https://instagram.com/muhammadrabbi.dev",
   },
   {
     name: "DEV Community",
-    href: "https://dev.to/",
+    href: "https://dev.to/muhammad_rabbi_dev",
   },
 ];
 

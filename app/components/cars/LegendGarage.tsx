@@ -182,19 +182,22 @@ export default function LegendGarage() {
   return (
     <section
       ref={sectionRef}
+      id="legendgarage"
+      
       className="relative w-full md:-mt-70 h-[100dvh] bg-background overflow-hidden"
     >
       {/* Centered Intro Title */}
       <div
         ref={titleRef}
-        className="absolute inset-0 z-20 flex items-center justify-center w-full h-full pointer-events-none p-4"
+        id="legendgarage1"
+        className="absolute inset-0 z-20 flex items-center justify-center w-full h-full p-4 pointer-events-none"
       >
         <h2 className="font-black font-jetbrains-mono leading-[1.1] md:leading-none text-center text-white uppercase text-4xl sm:text-6xl md:text-8xl max-w-4xl tracking-tight">
           Machines
           <br />
-          <span className="flex flex-row gap-2 items-center justify-center flex-wrap md:flex-nowrap">
+          <span className="flex flex-row flex-wrap items-center justify-center gap-2 md:flex-nowrap">
             That{" "}
-            <span className="w-24 h-10 sm:w-36 sm:h-14 md:w-50 md:h-20 rounded-full bg-red-400 inline-block overflow-hidden align-middle">
+            <span className="inline-block w-24 h-10 overflow-hidden align-middle bg-red-400 rounded-full sm:w-36 sm:h-14 md:w-50 md:h-20">
               <video
                 src={"/videos/machine.mp4"}
                 loop

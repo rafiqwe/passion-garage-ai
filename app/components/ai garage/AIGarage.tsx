@@ -247,6 +247,7 @@ export default function AiGarageLanding() {
   return (
     <section
       ref={containerRef}
+      id="aigarage"
       className="relative flex items-center justify-center min-h-screen overflow-hidden bg-[#030303] py-20 font-sans selection:bg-cyan-500/30 selection:text-cyan-200 w-full"
     >
       {/* Editorial Tech Grid Background */}

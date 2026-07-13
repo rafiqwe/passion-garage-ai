@@ -189,7 +189,7 @@ const ImageGalary = () => {
     },
   ];
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen" id="imagegalary">
       <InfiniteDraggableGrid gallery={galleryData} />
     </div>
   );

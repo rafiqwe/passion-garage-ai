@@ -1,30 +1,34 @@
 "use client";
 
 import { ArrowRight, Menu, X } from "lucide-react";
+import Link from "next/link";
 import React, { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Garage", href: "#garage" },
-    { label: "Timeline", href: "#timeline" },
-    { label: "AI Garage", href: "#ai" },
-    { label: "Gallery", href: "#gallery" },
+    { label: "Garage", href: "#legendgarage" },
+    { label: "Timeline", href: "#scrollstory" },
+    { label: "AI Garage", href: "#aigarage" },
+    { label: "Gallery", href: "#imagegalary" },
   ];
 
   return (
     <header className="fixed z-50 w-full transition top-4 h-18" id="navbar">
       <nav className="mx-auto flex h-full w-[90%] items-center justify-between px-4 font-jetbrains-mono">
         {/* Brand Logo Group */}
+          <Link href={'/'}>
         <div className="flex flex-col items-center justify-center">
-          <p className="text-3xl font-bold text-white font-jetbrains-mono md:text-4xl">
+            <p className="text-3xl font-bold text-white font-jetbrains-mono md:text-4xl">
             IGNITE
           </p>
           <span className="font-sora text-[10px] tracking-[0.35em] text-secondary uppercase sm:text-[10px]">
             Driven by Passion
           </span>
+          
         </div>
+          </Link>
 
         {/* Desktop Navigation Links (Hidden on Mobile) */}
         <div className="items-center hidden gap-10 md:flex">

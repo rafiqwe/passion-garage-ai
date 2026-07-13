@@ -114,9 +114,9 @@ export default function Hero() {
     }, { scope: heroRef });
 
     return (
-        <section className="relative w-full overflow-x-hidden">
+        <section id="hero" className="relative w-full overflow-x-hidden">
 
-            <section ref={heroRef} className="relative w-full h-screen overflow-hidden bg-black hero">
+            <section ref={heroRef}  className="relative w-full h-screen overflow-hidden bg-black hero">
                 <div className="relative w-full h-full hero-inner">
                     
                     <div 

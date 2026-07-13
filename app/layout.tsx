@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, JetBrains_Mono, Sora } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  JetBrains_Mono,
+  Sora,
+  Splash,
+} from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/layout/Navbar";
 import { LenisProvider } from "./components/common/lenis-provider";
+import SplashWrapper from "./components/common/SplashWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +20,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://your-domain.com"),
@@ -129,9 +135,11 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased ${sora.variable} ${JetBrainsMono.variable} `}
     >
-      <body className="flex flex-col min-h-full overflow-x-hidden">
-        <Navbar />
-        <LenisProvider>{children}</LenisProvider>
+      <body className="flex flex-col min-h-full overflow-x-hidden scrollbar-thin">
+        <SplashWrapper>
+          <Navbar />
+          <LenisProvider>{children}</LenisProvider>
+        </SplashWrapper>
       </body>
     </html>
   );

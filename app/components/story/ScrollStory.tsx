@@ -121,6 +121,7 @@ export default function ScrollStory() {
     // Changed standard min-h-screen to h-[100dvh] to prevent mobile address-bar bouncing issues
     <div
       ref={containerRef}
+      id="scrollstory"
       className="relative w-full h-[100dvh] bg-[#050505] overflow-hidden"
     >
       {story.map((item, index) => (
@@ -144,7 +145,7 @@ export default function ScrollStory() {
           </div>
           
           {/* Ensure wrapping layer leaves space for margins on mobile */}
-          <div className="relative z-20 w-full max-w-4xl mx-auto flex items-center justify-center">
+          <div className="relative z-20 flex items-center justify-center w-full max-w-4xl mx-auto">
             <StoryBlock
               sectionRef={undefined}
               title={item.title}
