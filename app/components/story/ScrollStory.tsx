@@ -122,7 +122,7 @@ export default function ScrollStory() {
     <div
       ref={containerRef}
       id="scrollstory"
-      className="relative w-full h-[100dvh] bg-[#050505] overflow-hidden"
+      className="relative w-full h-dvh bg-background overflow-hidden"
     >
       {story.map((item, index) => (
         <div
