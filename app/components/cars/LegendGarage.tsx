@@ -39,7 +39,9 @@ export default function LegendGarage() {
               // Responsive animation tuning configurations
               const entryX = isMobile ? 200 : 500;
               const exitX = isMobile ? -250 : -600;
-              const scrollLength = isMobile ? cars.length * 1200 : cars.length * 2000;
+              const scrollLength = isMobile
+                ? cars.length * 1200
+                : cars.length * 2000;
 
               // Clean responsive state resets
               gsap.set(carRefs.current.filter(Boolean), {
@@ -47,11 +49,17 @@ export default function LegendGarage() {
                 x: entryX,
                 scale: isMobile ? 0.9 : 0.8,
               });
-              gsap.set(".car-image", { scale: isMobile ? 0.95 : 0.8, opacity: 0 });
+              gsap.set(".car-image", {
+                scale: isMobile ? 0.95 : 0.8,
+                opacity: 0,
+              });
               gsap.set(".car-title", { y: isMobile ? 40 : 100, opacity: 0 });
               gsap.set(".car-quote", { y: isMobile ? 30 : 80, opacity: 0 });
               gsap.set(".car-stat", { y: 30, opacity: 0 });
-              gsap.set(".car-bg-title", { scale: isMobile ? 1.4 : 2, opacity: 0 });
+              gsap.set(".car-bg-title", {
+                scale: isMobile ? 1.4 : 2,
+                opacity: 0,
+              });
               gsap.set(".car-glow", { opacity: 0 });
 
               const tl = gsap.timeline({
@@ -71,7 +79,13 @@ export default function LegendGarage() {
               tl.fromTo(
                 titleRef.current,
                 { opacity: 0, scale: isMobile ? 1.3 : 2, filter: "blur(15px)" },
-                { opacity: 1, scale: 1, duration: 2, ease: "power3.inOut", filter: "blur(0px)" },
+                {
+                  opacity: 1,
+                  scale: 1,
+                  duration: 2,
+                  ease: "power3.inOut",
+                  filter: "blur(0px)",
+                },
               )
                 .to({}, { duration: 1 })
                 .to(titleRef.current, {
@@ -143,8 +157,16 @@ export default function LegendGarage() {
                     y: -30,
                     stagger: 0.08,
                   })
-                    .to(carEl.querySelector(".car-quote"), { opacity: 0, y: -30 }, "<")
-                    .to(carEl.querySelector(".car-title"), { opacity: 0, y: -40 }, "<")
+                    .to(
+                      carEl.querySelector(".car-quote"),
+                      { opacity: 0, y: -30 },
+                      "<",
+                    )
+                    .to(
+                      carEl.querySelector(".car-title"),
+                      { opacity: 0, y: -40 },
+                      "<",
+                    )
                     .to(
                       carEl.querySelector(".car-image"),
                       {
@@ -167,7 +189,7 @@ export default function LegendGarage() {
                 }
               });
             },
-            sectionRef
+            sectionRef,
           );
         }, sectionRef);
       });
@@ -183,8 +205,7 @@ export default function LegendGarage() {
     <section
       ref={sectionRef}
       id="legendgarage"
-      
-      className="relative w-full md:-mt-70 h-[100dvh] bg-background overflow-hidden"
+      className="relative w-full md:-mt-70 h-dvh -mt-170 bg-background overflow-hidden"
     >
       {/* Centered Intro Title */}
       <div
@@ -227,7 +248,10 @@ export default function LegendGarage() {
       </div>
 
       {/* Garage Door layer */}
-      <div ref={garageDoorRef} className="absolute inset-0 z-30 pointer-events-none">
+      <div
+        ref={garageDoorRef}
+        className="absolute inset-0 z-30 pointer-events-none"
+      >
         <GarageDoor />
       </div>
     </section>
