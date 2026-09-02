@@ -22,7 +22,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://your-domain.com"),
+  metadataBase: new URL("https://passion-garage.vercel.app/"),
 
   title: {
     default: "Passion Garage | A Cinematic BMW Experience",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     description:
       "Experience legendary performance cars through cinematic storytelling, immersive GSAP animations, and an AI-powered automotive assistant built with Google Gemini.",
 
-    url: "https://your-domain.com",
+    url: "https://passion-garage.vercel.app/",
 
     siteName: "Passion Garage",
 
@@ -135,7 +135,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased ${sora.variable} ${JetBrainsMono.variable} `}
     >
-      <body className="flex flex-col min-h-full overflow-x-hidden scrollbar-thin">
+      <body className="flex flex-col min-h-full overflow-x-hidden">
         <SplashWrapper>
           <Navbar />
           <LenisProvider>{children}</LenisProvider>
