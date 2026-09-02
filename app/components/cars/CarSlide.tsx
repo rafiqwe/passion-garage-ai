@@ -20,10 +20,10 @@ const CarSlide = forwardRef<HTMLDivElement, any>(({ car }, ref) => {
       </h2>
 
       {/* Main content positioning */}
-      <div className="relative z-10 flex flex-col-reverse md:flex-row items-center justify-center md:justify-between w-full h-full gap-6 md:gap-8 mx-auto max-w-7xl pt-12 md:pt-0">
+      <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between w-full h-full gap-0 md:gap-8 mx-auto max-w-7xl  md:pt-0">
         
         {/* Left Stats/Text column */}
-        <div className="w-full md:max-w-xl text-center md:text-left flex flex-col justify-center items-center md:items-start">
+        <div className="w-full md:max-w-xl mt-40 md:mt-0 text-center md:text-left flex flex-col justify-center items-center md:items-start">
           <p className="car-label mb-1 md:mb-4 uppercase tracking-[0.3em] md:tracking-[0.4em] text-white/40 text-xs md:text-sm">
             Featured Machine
           </p>
