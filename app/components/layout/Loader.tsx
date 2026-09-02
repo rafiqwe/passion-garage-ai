@@ -34,7 +34,7 @@ export default function Loader({ onDone }: LoaderProps) {
         duration: 0.8,
         ease: "power2.out",
       },
-      "-=0.5"
+      "-=0.5",
     );
 
     tl.from(
@@ -44,7 +44,7 @@ export default function Loader({ onDone }: LoaderProps) {
         y: 20,
         duration: 0.8,
       },
-      "-=0.4"
+      "-=0.4",
     );
 
     // Loading Progress
@@ -81,13 +81,12 @@ export default function Loader({ onDone }: LoaderProps) {
   return (
     <div
       ref={loaderRef}
-      className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden bg-black text-white"
+      className="fixed inset-0 z-9999 flex items-center justify-center overflow-hidden bg-black text-white"
     >
       {/* Background Glow */}
-      <div className="absolute h-[600px] w-[600px] rounded-full bg-cyan-500/10 blur-[180px]" />
+      <div className="absolute h-150 w-150 rounded-full bg-cyan-500/10 blur-[180px]" />
 
       <div className="relative flex flex-col items-center w-full max-w-2xl px-8">
-
         <h1
           ref={titleRef}
           className="text-center font-sora text-5xl font-black uppercase tracking-[0.25em] md:text-7xl"
@@ -95,19 +94,16 @@ export default function Loader({ onDone }: LoaderProps) {
           PASSION GARAGE
         </h1>
 
-        <div className="mt-12 h-[3px] w-full overflow-hidden rounded-full bg-white/10">
-
+        <div className="mt-12 h-0.75 w-full overflow-hidden rounded-full bg-white/10">
           <div
             ref={progressBarRef}
             className="w-0 h-full rounded-full bg-cyan-400"
           />
-
         </div>
 
         <div className="mt-6 text-2xl font-jetbrains-mono text-cyan-400">
           {progress}%
         </div>
-
       </div>
 
       <div
